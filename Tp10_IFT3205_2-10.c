@@ -63,10 +63,10 @@ int main(int argc,char **argv)
 
   float SamplingRate=11025;
 
-  float f_L = 0.5;
+  float f_L = 3.0;
   float η = 0.9;
   float μ = 0.5;
-  float f = 3.0;
+  float f = 1.0;
 
   for(int t=0;t<length;t++){
       float sum = 0.0;
