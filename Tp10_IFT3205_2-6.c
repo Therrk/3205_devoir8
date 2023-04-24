@@ -82,7 +82,7 @@ int main(int argc,char **argv)
   }
      
    //Sauvegarde
-   SaveSignalDatWav("passe_bande",SignY,length,SamplingRate); 
+   SaveSignalDatWav("wah-wah",SignY,length,SamplingRate); 
    //SaveSignalDat("SOUND_GoodMorningVietnam1",SignY,length);
  
    //Visu
