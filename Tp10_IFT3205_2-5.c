@@ -42,7 +42,7 @@ int main(int argc,char **argv)
   float fb = 1.0;
   float d=-cos(2*PI*fm/fe);
   float c_inter = tan(PI*fb/fe);
-  float c = (c_inter+1)/(c_inter-1);
+  float c = (c_inter-1)/(c_inter+1);
 
   //=================================================
   //Question 2.1
