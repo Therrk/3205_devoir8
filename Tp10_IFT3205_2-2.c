@@ -64,21 +64,17 @@ int main(int argc,char **argv)
   float G=0.9;
   int   Retard=2205;
 
-  reponse_Impul[0]=1;
-
   for(n=0;n<length;n++){
     SignY[n]=0.0;
     SignY[n]+=SignX[n];
     if (n>Retard-1) {
       SignY[n]+=G*SignY[n-Retard];
-      reponse_Impul[n]+=G*reponse_Impul[n-Retard];
       
     }
   }
      
    //Sauvegarde
    SaveSignalDatWav("SOUND_GoodMorningVietnam1",SignY,length,SamplingRate); 
-   SaveSignalDatWav("reponse_Impul",reponse_Impul,length,SamplingRate); 
    //SaveSignalDat("SOUND_GoodMorningVietnam1",SignY,length);
  
    //Visu
